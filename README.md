@@ -26,4 +26,4 @@ To get a local copy of the project up and running, follow these steps:
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/krishnakumar-1234/Nikhil-kumar.git
