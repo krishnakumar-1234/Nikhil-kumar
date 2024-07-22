@@ -1,0 +1,270 @@
+* {
+     margin: 0;
+     padding: 0;
+     scroll-behavior: smooth;
+
+}
+
+body {
+     color: whitesmoke;
+     background-color: black;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+     top: 0;
+     width: 100%;
+     z-index: 4;
+     height: 70px;
+     display: flex;
+     position: fixed;
+     align-items: center;
+     justify-content: center;
+     background-color: darkslateblue;
+     box-shadow: -2px -2px 19px 0px #8e8e8e;
+
+}
+
+header {
+     width: 100%;
+     padding: 8px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.logo {
+     gap: 4px;
+     display: flex;
+     align-items: center;
+}
+
+.logo img {
+     width: 50px;
+     height: 50px;
+     object-fit: cover;
+     border-radius: 100px;
+}
+
+.logo strong {
+     margin-top: 10px;
+}
+
+.links {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.links ol {
+     gap: 50px;
+     display: flex;
+     list-style: none;
+     align-items: center;
+     justify-content: center;
+}
+
+.links ol li a {
+     color: white;
+     font-size: 1em;
+     text-decoration: none;
+}
+
+.menubarContainer {
+     display: none;
+}
+
+#rightbarContainer {
+     top: 0;
+     right: 0;
+     width: 60%;
+     z-index: 10;
+     height: 100vh;
+     display: none;
+     position: fixed;
+     animation-name: null;
+     animation-duration: 0.50s;
+     animation-iteration-count: calc(1);
+     background-color: rgba(37, 37, 37, 0.868);
+
+}
+
+@keyframes rightbarAnimation {
+     0% {
+          width: 0;
+     }
+
+     100% {
+          width: 60%;
+
+     }
+}
+
+@media (max-width: 650px) {
+     .menubarContainer {
+          display: flex;
+          padding: 2px;
+          border-radius: 100px;
+          transition-duration: 0.40s;
+
+     }
+
+     .menubarContainer:active {
+          background-color: #8e8e8e;
+     }
+
+     .menubarContainer svg {
+          width: 34px;
+          height: 34px;
+          cursor: pointer;
+          color: white;
+
+     }
+
+     .links ol {
+          display: none;
+     }
+}
+
+
+
+.blurWholePage {
+     top: 0;
+     width: 100%;
+     z-index: 5;
+     height: 100%;
+     display: none;
+     position: fixed;
+     filter: blur(50);
+     animation: animtionstartend 0.50s calc(1);
+     background-color: rgba(0, 0, 0, 0.528);
+}
+
+@keyframes animtionstartend {
+     0% {
+          opacity: 0;
+     }
+
+     100% {
+          opacity: 1;
+     }
+}
+
+#landingpage {
+     width: 100%;
+     height: 85vh;
+     display: flex;
+     margin-top: 70px;
+     align-items: center;
+     /* background-color: ; */
+     background-image: url(download-2.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: calc(0px);
+}
+
+.contentLandingpage {
+     padding: 10px;
+     width: 50%;
+     margin-bottom: 70px;
+}
+
+.contentLandingpage h1 {
+     font-size: 2.50em;
+}
+
+.contentLandingpage p {
+     font-size: 18px;
+     line-height: 30px;
+}
+
+.followIconOptionsFeatres {
+     width: 100%;
+     bottom: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: end;
+     position: absolute;
+
+}
+
+.followIconsInner {
+     gap: 5px;
+     padding: 5px;
+     display: flex;
+     padding-right: 10px;
+}
+
+.followIconsInner div {
+     width: 30px;
+     height: 30px;
+     padding: 2px;
+     display: flex;
+     align-items: center;
+     border-radius: 100px;
+     justify-content: center;
+     border: 1px solid white;
+     transition-duration: 0.50s;
+     background-color: transparent;
+}
+
+.followIconsInner div:hover {
+     border: 1px solid transparent;
+     background-color: darkslateblue;
+
+
+}
+
+.followIconsInner a {
+     color: white;
+     font-size: 1.20em;
+     text-decoration: none;
+
+}
+
+
+@media (max-width: 600px) {
+     .contentLandingpage {
+          width: 100%;
+          margin-bottom: 0;
+     }
+
+     #landingpage {
+          height: 90vh;
+     }
+
+     .followIconOptionsFeatres {
+          bottom: 20px;
+     }
+}
+
+
+#AboutPage {
+     width: 100%;
+     height: 100vh;
+     padding-top: 100px;
+     /* background-image: url(download.png);
+     background-repeat: no-repeat;
+     background-size: cover; */
+
+}
+
+.headingForAboutpPage {
+     width: 100%;
+     display: flex;
+     font-size: 2em;
+     align-items: center;
+     justify-content: center;
+
+}
+
+
+#contact .container {
+     background-color: #000; /* Black background */
+   }
+   #contact label {
+     color: #ccc; /* Light gray for labels */
+   }
+   #contact h3 {
+     color: #edf2f7; /* Light color for headings */
+   }
