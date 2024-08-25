@@ -163,9 +163,9 @@ images.map((image, index) => {
        <h3>${image.title}</h3>
        <p>${image.description}</p>
        <div class="gallery-actions">
-         <button class="like-btn"><i class="fas fa-heart"></i> Like</button>
-         <button class="fullscreen-btn"><i class="fas fa-expand"></i> Fullscreen</button>
-         <button class="share-btn"><i class="fas fa-share"></i> Share</button>
+         <button class="like-btn"><i class="fas fa-heart"></i> <p>Like</p></button>
+         <button class="fullscreen-btn"><i class="fas fa-expand"></i> <p>FullView</p></button>
+         <button class="share-btn"><i class="fas fa-share"></i> <p>Share</p></button>
        </div>
      `;
   galleryGrid.appendChild(galleryItem);
