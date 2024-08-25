@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="animation.css">
   <link rel="stylesheet" href="slider.css">
   <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="3dslide.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -29,7 +32,7 @@
           <li><a href="#AboutPage">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#gallery">Edited Images</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ol>
         <div class="menubarContainer">
           <svg id="MenuIcon" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
@@ -175,6 +178,18 @@
     </div>
   </section>
 
+  <!-- Swiper Container -->
+  <div class="swiperContainerAll">
+    <div class="text-3xl flex items-center justify-end pr-8 mb-8 mt-30 gap-2">
+      <h2>Story of the day</h2>
+    </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper" id="swiperWrapper">
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
   <!-- Fullscreen Container -->
   <div class="fullscreen-container">
     <img src="" alt="Fullscreen Image" class="fullscreen-image">
@@ -245,9 +260,12 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <div class="blurWholePage"></div>
   <script src="javaScript.js"></script>
   <script src="Gallery.js"></script>
+  <script src="3dSlide.js"></script>
+
 </body>
 
 </html>
